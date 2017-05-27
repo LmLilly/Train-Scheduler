@@ -1,0 +1,27 @@
+body {
+	background: url("../images/train.jpg");
+	
+}
+*{
+	box-sizing: border-box;
+}
+
+.titleContainer {
+    background-color: #292F36;
+    color: #FFFFFF;
+}
+button {
+	position: absolute;
+	margin-bottom: 25px;
+} 
+#trainBorder {
+	border: 2px solid gray;
+    border-radius: 10px;
+	color:black;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+form {
+	font-weight: 700;
+	
+}

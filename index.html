@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Train Scheduler</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="container">
+
+<div class="jumbotron text-center titleContainer">
+	<h1>Anytime is  Train Time</h1>
+	<p>Choo Choo. Chee Chee.</p>
+</div>
+
+<table id="trains" class="table">
+	<thead>
+  	<tr>
+  		<th>Train Name</th>
+  		<th>Destination</th>
+  		<th>Frequency (min)</th>
+  		<th>Next Arrival</th>
+  		<th>Minutes Away (min)</th>
+  	</tr>
+  	</thead>
+  	<tbody></tbody>
+</table>
+
+<form role="form">
+	<div class="form-group">
+		<div id="trainBorder" class="text-center">Add Train</div>
+		<label for="name-input">Train Name:</label>
+		<input class="form-control" id="name-input" type="text">
+	</div>
+	<div class="form-group">
+		<label for="role-input">Destination:</label>
+		<input class="form-control" id="destination-input" type="text">
+	</div>
+	<div class="form-group">
+		<label for="start-date-input">First Train Time (HH:mm - military time)</label>
+		<input class="form-control" id="time-input" type="text">
+	</div>
+	<div class="form-group">
+		<label for="frequency-input">Frequency (min)</label>
+		<input class="form-control" id="frequency-input" rows="5"></input>
+	</div>
+	<button class="btn btn-default" id="add-user" type="submit" >Submit</button>
+	<div></div>
+</form>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script src="assets/javascript/firebaseConfig.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/javascript/train.js"></script>
+</body>
+</html>
